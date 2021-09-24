@@ -34,7 +34,7 @@ weatherConditions.onload = function() {
 
 
 // GET THE FORECARST
-weatherForecast.open('GET', '//api.openweathermap.org/data/2.5/forecast?zip=84653,us&appid=fd06a0938d8625265e533fac0cf213ed&units=imperial', true);
+weatherForecast.open('GET', '//api.openweathermap.org/data/2.5/forecast?q=Stockholm,se&appid=fd06a0938d8625265e533fac0cf213ed&units=imperial', true);
 weatherForecast.responseType = 'text'; 
 weatherForecast.send();
 
