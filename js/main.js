@@ -7,7 +7,7 @@ var cObj;
 var fObj;
 
 // GET THE CONDITIONS
-weatherConditions.open('GET', '//api.openweathermap.org/data/2.5/weather?q=Stockholm,se&appid=fd06a0938d8625265e533fac0cf213ed&units=imperial', true);
+weatherConditions.open('GET', '//api.openweathermap.org/data/2.5/weather?q=Stockholm,se&appid=fd06a0938d8625265e533fac0cf213ed&units=metric', true);
 weatherConditions.responseType = 'text';
 weatherConditions.send(null);
 
@@ -34,7 +34,7 @@ weatherConditions.onload = function() {
 
 
 // GET THE FORECARST
-weatherForecast.open('GET', '//api.openweathermap.org/data/2.5/forecast?q=Stockholm,se&appid=fd06a0938d8625265e533fac0cf213ed&units=imperial', true);
+weatherForecast.open('GET', '//api.openweathermap.org/data/2.5/forecast?q=Stockholm,se&appid=fd06a0938d8625265e533fac0cf213ed&units=metric', true);
 weatherForecast.responseType = 'text'; 
 weatherForecast.send();
 
